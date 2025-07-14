@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Dog Viewer 🐶</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Random Dog Viewer 🐶</h1>
+
+  <!-- Buttons to get new image and add to favorites -->
+  <button onclick="getDogImage()">Show Random Dog</button>
+  <button onclick="addToFavorites()">Add to Favorites ⭐</button>
+
+  <!-- Display current dog image -->
+  <div id="dog-container" style="margin-top: 20px;"></div>
+
+  <hr>
+
+  <!-- Favorites Section -->
+  <h2>Favorites 🐾</h2>
+
+  <!-- Search Box -->
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search by breed..."
+    oninput="searchFavorites()"
+    style="padding: 5px; width: 250px; margin-bottom: 15px;"
+  >
+
+  <!-- Where favorite dog images will show -->
+  <div id="favorites-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
