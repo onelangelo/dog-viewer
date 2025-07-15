@@ -76,3 +76,5 @@ function searchFavorites() {
 window.onload = () => {
   displayFavorites(favorites);
 };
+
+// Add brad name display in getDogImage()
